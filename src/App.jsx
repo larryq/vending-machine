@@ -43,7 +43,7 @@ export default function App() {
         <Stage
           controls={ref}
           preset="portrait"
-          intensity={1.5}
+          intensity={1.0}
           environment={false}
         >
           <Experience />

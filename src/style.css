@@ -52,7 +52,7 @@ body,
     width: 560px;
     height: 560px;
     opacity: 0;
-    animation: fadeInFadeOut 1.5s ease-in-out infinite;
+    animation: fadeInFadeOut 2.5s ease-in-out infinite;
   }
   
   @keyframes fadeInFadeOut {

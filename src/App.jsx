@@ -5,6 +5,7 @@ import {
   OrbitControls,
   Stage,
   CameraControls,
+  FlyControls,
   Ring,
   Environment,
   useTexture,
@@ -34,12 +35,26 @@ export default function App() {
     );
   }
 
+  function Loader3() {
+    return (
+      <Html>
+        <div id="loading-dialog" class="hidden">
+          <img src="loading image.jpeg" alt="Loading..." id="loading-image" />
+        </div>
+      </Html>
+    );
+  }
+
   return (
-    <Canvas shadows dpr={[1, 2]} camera={{ position: [35, 10, 55], fov: 50 }}>
+    <Canvas
+      shadows
+      dpr={[1, 2]}
+      camera={{ position: [7.5, 1.5, -17], fov: 55 }}
+    >
       <directionalLight castShadow position={[1, 2, 3]} intensity={4.5} />
       <ambientLight intensity={1.5} />
       <color attach="background" args={["white"]} />
-      <Suspense fallback={<Loader2 />}>
+      <Suspense fallback={<Loader3 />}>
         <Stage
           controls={ref}
           preset="portrait"
@@ -51,16 +66,17 @@ export default function App() {
       </Suspense>
 
       <CameraControls
-        target={[0, 0, 0]}
-        position={[-15, 15, 0]}
+        //target={[7, -12, 0]}
+        //position={[-51, 15, 0]}
         ref={cameraControlsRef}
-        //minDistance={0}
-        // maxDistance={200}
+        minDistance={0}
+        maxDistance={200}
         enabled={true}
         verticalDragToForward={true}
         dollySpeed={0.31}
-        //dollyToCursor={dollyToCursor}
-        //infinityDolly={true}
+        dollyToCursor={true}
+        infinityDolly={true}
+        makeDefault={false}
       />
     </Canvas>
   );

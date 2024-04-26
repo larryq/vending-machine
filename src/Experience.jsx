@@ -53,15 +53,6 @@ export default function Model(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.chip_bag001.geometry}
-        material={materials["chip bag"]}
-        position={[11.926, 1.827, -10.642]}
-        rotation={[Math.PI / 2, 0, -Math.PI / 2]}
-        scale={[0.351, 0.541, 0.541]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.game_case.geometry}
         material={materials.Material}
         position={[3.499, 2.553, 13.427]}
@@ -330,6 +321,51 @@ export default function Model(props) {
           scale={[1.229, 1.181, 0.953]}
         />
       </mesh>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.chip_bag008.geometry}
+        material={materials["chip bag"]}
+        position={[8.727, 1.823, -2.18]}
+        rotation={[Math.PI / 2, 1.394, -Math.PI / 2]}
+        scale={[0.351, 0.541, 0.541]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.chip_bag009.geometry}
+        material={materials["chip bag 2"]}
+        position={[8.727, 1.823, -2.979]}
+        rotation={[0.188, -0.339, 0.063]}
+        scale={[0.351, 0.541, 0.541]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.chip_bag010.geometry}
+        material={materials["Material.008"]}
+        position={[9.455, 1.823, -2.354]}
+        rotation={[0.208, 0.548, -0.109]}
+        scale={[0.351, 0.541, 0.541]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.chip_bag001.geometry}
+        material={materials.chocolate}
+        position={[8.727, 1.823, -3.721]}
+        rotation={[0.372, 1.065, -0.329]}
+        scale={[0.351, 0.541, 0.541]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.chip_bag011.geometry}
+        material={materials["Material.008"]}
+        position={[1.503, 0.584, 3.495]}
+        rotation={[0.079, 0.582, -0.07]}
+        scale={[0.351, 0.541, 0.541]}
+      />
       <mesh
         castShadow
         receiveShadow
@@ -2647,7 +2683,8 @@ export default function Model(props) {
         castShadow
         receiveShadow
         geometry={nodes.Plane.geometry}
-        material={materials.cloud66}
+        material={materials["lineoleum 1"]}
+        position={[5.871, 0, 0]}
         scale={15.404}
       />
       <mesh
@@ -4086,8 +4123,8 @@ export default function Model(props) {
         receiveShadow
         geometry={nodes.soda_can181.geometry}
         material={materials["silver top"]}
-        position={[1.121, 2.536, -3.801]}
-        rotation={[0, -0.585, 0]}
+        position={[7.672, 1.852, -3.086]}
+        rotation={[1.601, -0.585, 0]}
         scale={[0.106, 0.204, 0.106]}
       >
         <mesh
@@ -5326,9 +5363,64 @@ export default function Model(props) {
       <mesh
         castShadow
         receiveShadow
+        geometry={nodes.Plane001.geometry}
+        material={materials.cloud66}
+        position={[6.709, 12.126, 0]}
+        rotation={[0, 0, Math.PI]}
+        scale={15.404}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane003.geometry}
+        material={materials["Material.007"]}
+        position={[5.871, 12.084, 0]}
+        scale={15.404}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.soda_can223.geometry}
+        material={materials["silver top"]}
+        position={[8.162, 1.852, -3.086]}
+        rotation={[1.229, -0.485, -0.706]}
+        scale={[0.106, 0.204, 0.106]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.soda_can_body035.geometry}
+          material={materials["acai burst"]}
+          position={[0.007, -0.006, -0.008]}
+          rotation={[3.105, -0.084, -3.127]}
+          scale={[1, 1.002, 1]}
+        />
+      </mesh>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.soda_can224.geometry}
+        material={materials["silver top"]}
+        position={[8.883, 1.852, -1.675]}
+        rotation={[1.229, -0.485, -0.706]}
+        scale={[0.106, 0.204, 0.106]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.soda_can_body042.geometry}
+          material={materials["diet orange"]}
+          position={[0.007, -0.006, -0.008]}
+          rotation={[3.105, -0.084, -3.127]}
+          scale={[1, 1.002, 1]}
+        />
+      </mesh>
+      <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.bubblin_9.geometry}
         material={materials["bubblin 9"]}
-        position={[0.022, 2.611, -4.885]}
+        position={[0.022, 2.611, -4.872]}
         rotation={[Math.PI / 2, 0, Math.PI]}
         scale={2.841}
       />
@@ -5337,7 +5429,7 @@ export default function Model(props) {
         receiveShadow
         geometry={nodes.bubblin_9001.geometry}
         material={materials["zest-up label"]}
-        position={[0.022, 2.611, -12.541]}
+        position={[0.022, 2.611, -12.514]}
         rotation={[Math.PI / 2, 0, Math.PI]}
         scale={2.841}
       />
@@ -5376,6 +5468,23 @@ export default function Model(props) {
         position={[8.215, 2.8, 13.402]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         scale={2.424}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane002.geometry}
+        material={materials["sour cream"]}
+        position={[-3.353, 1.013, 0.462]}
+        rotation={[0, 0, -Math.PI / 2]}
+        scale={[1, 1, 15.082]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cylinder.geometry}
+        material={materials["silver top"]}
+        position={[8.721, 1.733, -2.428]}
+        scale={1.724}
       />
     </group>
   );

@@ -34,3 +34,39 @@ body,
     }
   }
 
+  #loading-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure the dialog is above other elements */
+
+}
+  
+  #loading-image {
+    width: 560px;
+    height: 560px;
+    opacity: 0;
+    animation: fadeInFadeOut 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes fadeInFadeOut {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
